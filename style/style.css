@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+}
+
+/* COLORS */
+
+:root {
+    --bgColor:  #C5E4E7;
+    --primary:  #FFFFFF;
+    --labelColor: #5E7A7D;
+    --inputColor: #F3F9FA;
+    --secondary: #00474B;
+    --customColor: #547878;
+    --spanColor: #7F9D9F;
+    --activeColor: #26C2AE;
+    --hoverBtn:  #9FE8DF;
+    --zeroColor: #E17457;
+    --resetBtn: #0D686D;
+}
+
+/* ***************************************************** */
+
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bgColor);
+}
+
+.logo {
+    margin-top: 5em;
+    margin-bottom: 4em;
+}
+
+.container {
+    width: 100%;
+    background: var(--primary);
+    box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+    border-radius: 25px 25px 0px 0px;
+}
+
+
+input {
+    display: block;
+    width: 100%;
+
+    border: none;
+    background: var(--inputColor);
+    border-radius: 5px;
+    height: 48px;
+    text-align: right;
+    
+    color: var(--secondary);
+    font-size: 2.4rem;
+    padding-right: 0.667em;
+}
+
+.bill,
+.select-tip,
+.people-number {
+    margin: 3.2em;
+}
+
+.bill-form,
+.peopleNumber-form {
+    position: relative;
+}
+
+.bill-label,
+.tip-label,
+.people-label {
+    margin-bottom: 1em;
+    font-size: 1.6rem;
+    color: var(--labelColor);
+}
+
+.dollar-icon,
+.person-icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    margin-top: 1.5em;
+    margin-left: 1.6em;
+}
+
+.submit-btn {
+    border: none;
+    background: var(--secondary);
+    border-radius: 5px;
+    color: var(--primary);
+    font-size: 2.4rem;
+}
+
+.submit-btn:hover,
+.reset-btn:hover {
+    background: var(--hoverBtn);
+    color: var(--secondary);
+}
+
+.active-btn {
+    background: var(--activeColor);
+    color: var(--secondary);
+}
+
+.btn-wrapper {
+    flex-flow: row wrap;
+    gap: 16px;
+}
+
+.submit-btn,
+.custom-input {
+    height: 48px;
+    width: 146px;
+}
+
+.custom-input { color: var(--customColor); }
+
+.numberof-people,
+.tip-amount,
+.tip-total {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dont-zero {
+    font-size: 1.6rem;
+    color: var(--zeroColor);
+    display: none;
+}
+
+.result {
+    background: var(--secondary);
+    border-radius: 15px;
+ 
+    padding: 4em 2.2em 2.4em 2.4em;
+    margin: 0 2.4em 3.2em 2.4em;
+}
+
+.tip-amount,
+.tip-total {
+    margin-bottom: 2.4em;
+}
+
+.title {
+    font-size: 1.6rem;
+    color: var(--primary);
+}
+
+.person-span {
+    font-size: 1.3rem;
+    color: var(--spanColor);
+}
+
+.result-value {
+    font-size: 3.2rem;
+    letter-spacing: 0.667px;
+    color: var(--activeColor);
+}
+
+.reset-btn {
+    border: none;
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    font-size: 2rem;
+
+    background: var(--resetBtn);
+    color: var(--secondary);
+}
+
+
+
+

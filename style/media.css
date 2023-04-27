@@ -1,0 +1,42 @@
+@media (min-width: 920px) {
+    .logo {
+        margin-top: 16em;
+        margin-bottom: 8em;
+    }
+
+    .container {
+        display: flex;
+
+        width: 920px;
+        border-radius: 25px;
+    }
+
+    .bill,
+    .select-tip,
+    .people-number {
+        margin: 4.8em;
+    }
+
+    .submit-btn,
+    .custom-input {
+        width: 117px;
+    }
+
+    .result {
+        padding: 4em;
+        margin: 3.2em 3.2em 3.2em 0;
+        width: 413px;
+    }
+
+    
+
+    input { max-width: 379px; }
+
+    .select-tip { max-width: 379px; }
+
+    .btn-wrapper { gap: 14px; }
+
+    .tip-total { margin-bottom: 16em; }
+
+    
+}

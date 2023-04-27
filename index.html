@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip-Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/media.css">
+</head>
+<body>
+    <div class="logo"><img src="./images/logo.png" alt=""></div>
+
+    <div class="container">
+        <!-- SECTION 1  -->
+        <section>
+            <div class="bill">
+                <label class="bill-label" for="bill-input">Bill</label>
+                <div class="bill-form">
+                    <input type="number" name="bill-input" id="bill-input">
+                    <img class="dollar-icon" src="./images/dollar.svg" alt="">
+                </div>
+            </div>
+            <div class="select-tip">
+                <label class="tip-label" for="">Select Tip %</label>
+
+                <div class="btn-wrapper flex">
+                    <button class="submit-btn" type="submit">5%</button>
+                    <button class="submit-btn" type="submit">10%</button>
+                    <button class="submit-btn active-btn" type="submit">15%</button>
+                    <button class="submit-btn" type="submit">25%</button>
+                    <button class="submit-btn" type="submit">50%</button>
+                    <input class="custom-input" type="text" placeholder="Custom">
+                </div>
+            </div>
+             <div class="people-number">
+                <div class="numberof-people flex">
+                    <label class="people-label" for="people-input">Number of People</label>
+                    <span class="dont-zero">Can’t be zero</span>
+                </div>
+                
+                <div class="peopleNumber-form">
+                    <input type="number" id="people-input">
+                    <img class="person-icon" src="./images/person.svg" alt="">
+                </div>
+             </div>
+        </section>
+
+
+        <!-- SECTION 2 -->
+        <section>
+            <div class="result">
+                <div class="tip-amount flex">
+                    <div class="info">
+                        <h4 class="title">Tip Amount</h4>
+                        <span class="person-span">/ person</span>
+                    </div>
+                    <div class="tip-result">
+                        <span id="tip-amount" class="result-value">$0.00</span>
+                    </div>
+                </div>
+
+                <div class="tip-total flex">
+                    <div class="info">
+                        <h4 class="title">Total</h4>
+                        <span class="person-span">/ person</span>
+                    </div>
+                    <div class="total-result">
+                        <span id="total-amount" class="result-value">$0.00</span>
+                    </div>
+                </div>
+
+                <button class="reset-btn">RESET</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
